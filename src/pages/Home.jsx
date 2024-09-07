@@ -20,7 +20,7 @@ console.log(
 )
   return (
     <div className='px-10' >
-      <div className='max-w-[1280px] mx-auto div-11'>
+      <div className='max-w-[1280px] mx-auto div-11 px-5'>
         <div>
           <h1 className='text-[36px] div-17 max-w-[70%] font-[600] '>Northern Mariana Islands</h1>
          <p className='font-[400] div-17 mt-5 max-w-[90%] text-[500]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, impedit dicta sunt dolorum, quasi facilis necessitatibus nisi quas nihil ratione voluptate culpa maiores libero laborum voluptatem, harum delectus repudiandae nobis.</p>
@@ -39,18 +39,18 @@ console.log(
         </h2>
         <NavLink to="/davlatlar"><img className='w-10' src="   https://cdn-icons-png.flaticon.com/512/3031/3031735.png " alt="" /></NavLink>
         </div>
-        <div className='div-12 mt-10'>
+        <div className='div-5 mt-10'>
         {data.slice(0, 4).map((e, id) => (
     <NavLink onClick={() => setData5(e.name.common)} to="/malumod" key={id}>
-        <div className="drop-shadow-md bg-base-100 w-[264px] rounded-[5px]">
-            <img className="w-[100%] rounded-t-[5px] h-[160px]" src={e.flags.png} alt={`${e.name.common} flag`} />
-            <div className="p-[24px] max-w-[100%]">
-                <h2 className="text-2 font-[800]">{e.name.common}</h2>
-                <h2 className="mt-4 text-[14px] font-[600] flex">Population: <p className="font-[400] ml-1">{e.population}</p></h2>
-                <h2 className="text-[14px] font-[600] flex">Region: <p className="font-[400] ml-1">{e.region}</p></h2>
-                <h2 className="text-[14px] font-[600] flex">Capital: <p className="font-[400] ml-1">{e.capital[0]}</p></h2>
-            </div>
-        </div>
+        <div className=" drop-shadow-md bg-base-100 rounded-[5px]">
+                                    <img className="w-[100%] rounded-t-[5px] img-1" src={e.flags.png} alt={`${e.name.common} flag`} />
+                                    <div className="p-[7%] max-w-[100%]">
+                                        <h2 className="text-2 font-[800]">{e.name.common}</h2>
+                                        <h2 className="mt-4 text-1  flex">Population: <p className="font-[400] ml-1">{e.population}</p></h2>
+                                        <h2 className="text-1  flex">Region: <p className="font-[400] ml-1">{e.region}</p></h2>
+                                        <h2 className="text-1  flex">Capital: <p className="font-[400] ml-1">{e.capital[0]}</p></h2>
+                                    </div>
+                                </div>
     </NavLink>
 ))}
         </div>
