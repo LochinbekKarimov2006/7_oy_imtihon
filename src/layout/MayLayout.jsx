@@ -4,10 +4,10 @@ import { Outlet } from 'react-router-dom'
 
 function MayLayout() {
   return (
-    <div className=''>
+    <>
         <Navbar/>
         <Outlet/>
-    </div>
+    </>
   )
 }
 

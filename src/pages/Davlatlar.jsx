@@ -73,8 +73,8 @@ function Davlatlar() {
     return (
         <div>
             <div className="max-w-[1280px] mx-auto">
-                <div className="my-[20px] flex flex-wrap gap-2 px-2 justify-between items-center">
-                    <div className=" div-3 rounded-[5px]  h-[58px] drop-shadow-md flex items-center bg-base-100 px-5 gap-5 ">
+                <div className="my-[20px] flex flex-wrap gap-2 px-2 justify-between items-center ">
+                    <div className=" div-3 rounded-[5px]  h-[58px] flex items-center bg-base-100 px-5 gap-5 border-[1px] div-10">
                         <img
                             className="w-[18px]"
                             src="https://cdn-icons-png.flaticon.com/512/660/660703.png"
@@ -83,16 +83,16 @@ function Davlatlar() {
                         <input
                          value={searchTerm}
                          onChange={(e) => setSearchTerm(e.target.value)}
-                            className="h-[100%] sm:w-full w-[90%] focus:outline-none focus:border-none"
+                            className="h-[100%] bg-[#0000] sm:w-full w-[90%] focus:outline-none focus:border-none"
                             type="text"
                             placeholder="Search for a country…"
                         />
                     </div>
-                    <h1 className="h-[58px] flex items-center justify-center drop-shadow-md bg-base-100 px-5 rounded-[5px]">
+                    <h1 className="h-[58px] flex items-center justify-center div-10 bg-base-100 px-5 rounded-[5px]">
                         Davlatlar soni: {data.length}
                     </h1>
                     <div className="relative z-10">
-                        <div onClick={off} className="rounded-[5px] drop-shadow-md h-[58px] px-[20px] bg-base-100 flex items-center justify-between w-52 cursor-pointer">
+                        <div onClick={off} className="rounded-[5px] div-10 h-[58px] px-[20px] bg-base-100 flex items-center justify-between w-52 cursor-pointer">
                             <h2>{categori}</h2>
                             <img className="w-4 h-4" src="https://cdn-icons-png.flaticon.com/512/5727/5727082.png" alt="Dropdown icon" />
                         </div>
@@ -124,12 +124,14 @@ function Davlatlar() {
                         ))}
                     </div>
                     {button2 && (
+                        <div className="w-full flex justify-center my-4">
                         <button 
-                            className="bg-[#003bfe] py-[10px] px-[20px] mx-[20px] text-[#fff] font-[600] rounded-[5px] hover:bg-[#031bf694]" 
+                            className="bg-[#003bfe] py-3  px-[20px] mx-[40px] text-[#fff] font-[600] rounded-[5px] hover:bg-[#031bf694]" 
                             onClick={qoshish}
                         >
                             Ko'proq ko'rish
                         </button>
+                        </div>
                     )}
                 </div>
             </div>

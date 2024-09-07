@@ -36,10 +36,10 @@ function Contact() {
     };
 
     return (
-        <div className='bg-base-100 opacity-70'>
+        <div className='bg-base-100 opacity-200'>
             <div className=' max-w-[1280px] mx-auto py-[10%] '>
                 <div className='mx-auto my-auto div-0 px-8 flex justify-between'>
-                    <div className='div-1'>
+                    <div className='div-1 '>
                         <h1 className='text-[32px] max-w-[250px] font-[700]'>Sign In to Recharge Direct</h1>
                         <p className='text-[14px] max-w-[150px] font-[600] mt-10'>Agar sizda hisob bo'lmasa, ro'yxatdan o'ting!</p>
                     </div>
@@ -60,10 +60,10 @@ function Contact() {
                                 type="password" 
                                 placeholder='⁕⁕⁕⁕⁕⁕⁕⁕' 
                             />
-                            <p className='text-[12px] mt-4 mb-10 w-full text-end font-[500] text-[#00000073]'>Parolni tiklash?</p>
+                            <p className='text-[12px] mt-4 mb-10 w-full text-end font-[500] '>Parolni tiklash?</p>
                             <button type='submit' className='w-full bg-[#6345fd] h-[50px] rounded-[10px] text-[#fff] text-[20px] font-[600]'>Kirish</button>
                             <div className='border-b-[1px] flex justify-center mt-5 mb-10'>
-                                <p className='text-center mb-[-12px] w-[150px] bg-white font-[600]'>Yoki davom eting</p>
+                                <p className='text-center mb-[-12px] w-[150px] bg-base-100 font-[600]'>Yoki davom eting</p>
                             </div>
                             <div className='flex justify-between mt-10'>
                                 <button 
