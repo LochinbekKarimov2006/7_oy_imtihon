@@ -22,8 +22,8 @@ console.log(
     <div className='px-10' >
       <div className='max-w-[1280px] mx-auto div-11'>
         <div>
-          <h1 className='text-[36px] max-w-[70%] font-[600] '>Northern Mariana Islands</h1>
-         <p className='font-[400] mt-5 max-w-[80%] text-[500]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, impedit dicta sunt dolorum, quasi facilis necessitatibus nisi quas nihil ratione voluptate culpa maiores libero laborum voluptatem, harum delectus repudiandae nobis.</p>
+          <h1 className='text-[36px] div-17 max-w-[70%] font-[600] '>Northern Mariana Islands</h1>
+         <p className='font-[400] div-17 mt-5 max-w-[90%] text-[500]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, impedit dicta sunt dolorum, quasi facilis necessitatibus nisi quas nihil ratione voluptate culpa maiores libero laborum voluptatem, harum delectus repudiandae nobis.</p>
       <NavLink onClick={() => setData5(e.name.common)} to="/malumod">
 
       <button className='py-2 px-4 mt-3 bg-[#1405f1] rounded-[10px] text-[#fff]'>Toliq Malumod</button>
@@ -45,7 +45,7 @@ console.log(
         <div className="drop-shadow-md bg-base-100 w-[264px] rounded-[5px]">
             <img className="w-[100%] rounded-t-[5px] h-[160px]" src={e.flags.png} alt={`${e.name.common} flag`} />
             <div className="p-[24px] max-w-[100%]">
-                <h2 className="text-[18px] font-[800]">{e.name.common}</h2>
+                <h2 className="text-2 font-[800]">{e.name.common}</h2>
                 <h2 className="mt-4 text-[14px] font-[600] flex">Population: <p className="font-[400] ml-1">{e.population}</p></h2>
                 <h2 className="text-[14px] font-[600] flex">Region: <p className="font-[400] ml-1">{e.region}</p></h2>
                 <h2 className="text-[14px] font-[600] flex">Capital: <p className="font-[400] ml-1">{e.capital[0]}</p></h2>
@@ -75,7 +75,7 @@ console.log(
               <h3 className="flex">Sub Region: <p className="font-[400]">{data.subregion}</p></h3>
               <h3 className="flex">Capital: <p className="font-[400]">{data.capital?.[0]}</p></h3>
             </div>
-            <div className="text-[16px] mt-10  w-[50%] flex flex-col gap-2 font-[600] mb-[-6px]">
+            <div className="text-[16px] div-17 mt-10  w-[50%] flex flex-col gap-2 font-[600] mb-[-6px]">
               <h3 className="flex">Top Level Domain: <p className="font-[400]">bo.</p></h3>
               <h3 className="flex">Currencies: <p className="font-[400]">{data.currencies}</p></h3>
               <h3 className="flex">Languages: <p className="font-[400]">{data.languages}</p></h3>
@@ -101,7 +101,7 @@ console.log(
                 <h3 className="flex">Sub Region: <p className="font-[400]">{data.subregion}</p></h3>
                 <h3 className="flex">Capital: <p className="font-[400]">{data.capital?.[0]}</p></h3>
               </div>
-              <div className="text-[16px] mt-10  w-[50%] flex flex-col gap-2 font-[600] mb-[-6px]">
+              <div className="text-[16px] div-17 mt-10  w-[50%] flex flex-col gap-2 font-[600] mb-[-6px]">
                 <h3 className="flex">Top Level Domain: <p className="font-[400]">bo.</p></h3>
                 <h3 className="flex">Currencies: <p className="font-[400]">{data.currencies}</p></h3>
                 <h3 className="flex">Languages: <p className="font-[400]">{data.languages}</p></h3>
@@ -109,7 +109,7 @@ console.log(
             </div>
            
           </div>
-          <div className="div-7">
+          <div className="div-7 my-5">
             {data.flags && data.flags.png ? (
               <img className="w-full" src={data.flags.png} alt={data.name.common} />
             ) : (

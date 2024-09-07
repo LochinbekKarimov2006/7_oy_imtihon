@@ -72,7 +72,7 @@ function Davlatlar() {
       console.log(data)
     return (
         <div>
-            <div className="max-w-[1280px] mx-auto">
+            <div className="max-w-[1280px] mx-auto px-5">
                 <div className="my-[20px] flex flex-wrap gap-2 px-2 justify-between items-center ">
                     <div className=" div-3 rounded-[5px]  h-[58px] flex items-center bg-base-100 px-5 gap-5  div-10">
                         <img
@@ -111,13 +111,13 @@ function Davlatlar() {
                     <div className="div-5 mb-5">
                         {data.map((e, id) => (
                             <NavLink onClick={() => setData5(e.name.common)} to="/malumod" key={id}>
-                                <div className=" drop-shadow-md bg-base-100 w-[264px]  rounded-[5px]">
-                                    <img className="w-[100%] rounded-t-[5px] h-[160px]" src={e.flags.png} alt={`${e.name.common} flag`} />
-                                    <div className="p-[24px] max-w-[100%]">
-                                        <h2 className="text-[18px] font-[800]">{e.name.common}</h2>
-                                        <h2 className="mt-4 text-[14px] font-[600] flex">Population: <p className="font-[400] ml-1">{e.population}</p></h2>
-                                        <h2 className="text-[14px] font-[600] flex">Region: <p className="font-[400] ml-1">{e.region}</p></h2>
-                                        <h2 className="text-[14px] font-[600] flex">Capital: <p className="font-[400] ml-1">{e.capital[0]}</p></h2>
+                                <div className=" drop-shadow-md bg-base-100 rounded-[5px]">
+                                    <img className="w-[100%] rounded-t-[5px] img-1" src={e.flags.png} alt={`${e.name.common} flag`} />
+                                    <div className="p-[7%] max-w-[100%]">
+                                        <h2 className="text-2 font-[800]">{e.name.common}</h2>
+                                        <h2 className="mt-4 text-1  flex">Population: <p className="font-[400] ml-1">{e.population}</p></h2>
+                                        <h2 className="text-1  flex">Region: <p className="font-[400] ml-1">{e.region}</p></h2>
+                                        <h2 className="text-1  flex">Capital: <p className="font-[400] ml-1">{e.capital[0]}</p></h2>
                                     </div>
                                 </div>
                             </NavLink>

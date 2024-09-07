@@ -61,14 +61,14 @@ function ToliqMalumod() {
         <div className="div-8">
           <div className="div-9">
             <div className="text-[16px] font-[600] w-[50%] flex flex-col gap-2">
-              <h2 className="text-[32px] font-[700] mb-3">{data.name.common}</h2>
+              <h2 className="text-[32px] div-17 font-[700] mb-3">{data.name.common}</h2>
               <h3 className="flex">Native Name: <p className="font-[400]">{data.name.nativeName}</p></h3>
               <h3 className="flex">Population: <p className="font-[400]">{data.population}</p></h3>
               <h3 className="flex">Region: <p className="font-[400]">{data.region}</p></h3>
               <h3 className="flex">Sub Region: <p className="font-[400]">{data.subregion}</p></h3>
               <h3 className="flex">Capital: <p className="font-[400]">{data.capital?.[0]}</p></h3>
             </div>
-            <div className="text-[16px] mt-10  w-[50%] flex flex-col gap-2 font-[600] mb-[-6px]">
+            <div className="text-[16px] div-17 mt-10  w-[50%] flex flex-col gap-2 font-[600] mb-[-6px]">
               <h3 className="flex">Top Level Domain: <p className="font-[400]">bo.</p></h3>
               <h3 className="flex">Currencies: <p className="font-[400]">{data.currencies}</p></h3>
               <h3 className="flex">Languages: <p className="font-[400]">{data.languages}</p></h3>
