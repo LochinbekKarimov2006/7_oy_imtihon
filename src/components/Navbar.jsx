@@ -64,7 +64,7 @@ function Navbar() {
                             <li><NavLink to="/contact">Contact</NavLink></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-[24px] font-[800]">Where in the world?</a>
+                    <NavLink to="/" className="btn btn-ghost text-[24px] font-[800]">Where in the world?</NavLink>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-[600] text-[16px] text-[#f88204]">
