@@ -74,7 +74,7 @@ function Davlatlar() {
         <div>
             <div className="max-w-[1280px] mx-auto">
                 <div className="my-[20px] flex flex-wrap gap-2 px-2 justify-between items-center ">
-                    <div className=" div-3 rounded-[5px]  h-[58px] flex items-center bg-base-100 px-5 gap-5 border-[1px] div-10">
+                    <div className=" div-3 rounded-[5px]  h-[58px] flex items-center bg-base-100 px-5 gap-5  div-10">
                         <img
                             className="w-[18px]"
                             src="https://cdn-icons-png.flaticon.com/512/660/660703.png"
@@ -111,7 +111,7 @@ function Davlatlar() {
                     <div className="div-5 mb-5">
                         {data.map((e, id) => (
                             <NavLink onClick={() => setData5(e.name.common)} to="/malumod" key={id}>
-                                <div className=" drop-shadow-md bg-base-100 w-[264px] rounded-[5px]">
+                                <div className=" drop-shadow-md bg-base-100 w-[264px]  rounded-[5px]">
                                     <img className="w-[100%] rounded-t-[5px] h-[160px]" src={e.flags.png} alt={`${e.name.common} flag`} />
                                     <div className="p-[24px] max-w-[100%]">
                                         <h2 className="text-[18px] font-[800]">{e.name.common}</h2>

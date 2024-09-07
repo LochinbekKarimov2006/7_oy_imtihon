@@ -48,7 +48,7 @@ function ToliqMalumod() {
   return (
     <div className="max-w-[1280px] mx-auto flex flex-col justify-center mt-[5%]">
         <NavLink to="/davlatlar">
-            <p className="text-[20px] div-10 font-[700] mb-10">‹  back</p>
+            <p className="text-[20px] bg-[#00000000]  font-[700] mb-10">‹  back</p>
         </NavLink>
       <div className="div-6">
         <div className="div-7">

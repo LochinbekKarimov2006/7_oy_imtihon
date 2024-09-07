@@ -5,7 +5,20 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        carousel: {
+          '0%': { opacity: '0' },
+          '10%': { opacity: '1' },
+          '33.33%': { opacity: '1' },
+          '43.33%': { opacity: '0' },
+          '100%': { opacity: '0' },
+        },
+      },
+      animation: {
+        carousel: 'carousel 6s infinite',
+      },
+    },
   },
-  plugins: [require('daisyui'),],
+  plugins: [require('daisyui')],
 }
