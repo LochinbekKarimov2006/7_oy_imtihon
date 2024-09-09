@@ -72,7 +72,7 @@ function Davlatlar() {
       console.log(data)
     return (
         <div>
-            <div className="max-w-[1280px] mx-auto px-5">
+            <div className="max-w-[1280px] mx-auto px-2">
                 <div className="my-[20px] flex flex-wrap gap-2 px-2 justify-between items-center ">
                     <div className=" div-3 rounded-[5px]  h-[58px] flex items-center bg-base-100 px-5 gap-5  div-10">
                         <img

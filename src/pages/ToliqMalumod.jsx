@@ -48,7 +48,7 @@ function ToliqMalumod() {
   return (
     <div className="max-w-[1280px] mx-auto flex flex-col justify-center mt-[5%]">
         <NavLink to="/davlatlar">
-            <p className="text-[20px] bg-[#00000000]  font-[700] mb-10">‹  back</p>
+            <p className="text-[20px] ml-3 bg-[#00000000]  font-[700] mb-10">‹  back</p>
         </NavLink>
       <div className="div-6">
         <div className="div-7">
@@ -60,8 +60,8 @@ function ToliqMalumod() {
         </div>
         <div className="div-8">
           <div className="div-9">
-            <div className="text-[16px] font-[600] w-[50%] flex flex-col gap-2">
-              <h2 className="text-[32px] div-17 font-[700] mb-3">{data.name.common}</h2>
+            <div className="text-[16px] div-17 font-[600] flex flex-col gap-2">
+              <h2 className="text-[32px] font-[700] mb-3 mt-3">{data.name.common}</h2>
               <h3 className="flex">Native Name: <p className="font-[400]">{data.name.nativeName}</p></h3>
               <h3 className="flex">Population: <p className="font-[400]">{data.population}</p></h3>
               <h3 className="flex">Region: <p className="font-[400]">{data.region}</p></h3>

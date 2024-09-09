@@ -65,7 +65,7 @@ function Navbar() {
                             <li><NavLink to="/contact">Contact</NavLink></li>
                         </ul>
                     </div>
-                    <NavLink to="/" className="btn btn-ghost text-[24px] font-[800]">Where in the world?</NavLink>
+                    <NavLink to="/" className="btn text-3 btn-ghost  font-[800]">Where in the world?</NavLink>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-[600] text-[16px] text-[#f88204]">
@@ -74,7 +74,7 @@ function Navbar() {
                         <li><NavLink to="/contact">Contact</NavLink></li>
                     </ul>
                 </div>
-                <div className="navbar-end flex items-center">
+                <div className="navbar-end flex items-center gap-[2px]">
                     <label className="swap swap-rotate">
                         <input type="checkbox" checked={theme === 'dark'} onChange={handleThemeChange} />
                         <svg className="swap-off h-5 w-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
