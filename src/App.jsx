@@ -5,7 +5,6 @@ import Home from './pages/Home'
 import Davlatlar from './pages/Davlatlar'
 import Contact from './pages/Contact'
 import ToliqMalumod from './pages/ToliqMalumod'
-import Login from './pages/Login'
 function App() {
   let router=createBrowserRouter([
     {
@@ -28,10 +27,7 @@ function App() {
           path:"/malumod",
           element:<ToliqMalumod/>
         },
-        {
-         path :"/login",
-         element:<Login/>
-        }
+       
       ]
 
     }
