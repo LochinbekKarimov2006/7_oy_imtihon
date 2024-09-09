@@ -6,19 +6,22 @@ import img4 from "../img/img4.png";
 import { signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import { auth, provider } from '../firebase/Fire';
 import { Malumodlar } from '../context/GlobalContext';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function Contact() {
     const { data6, setData6 } = useContext(Malumodlar);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-
     const signInWithEmail = async (e) => {
         e.preventDefault();
         try {
             await signInWithEmailAndPassword(auth, email, password);
             console.log('Kirish muvaffaqiyatli');
+            toast.success("Siz mofaqiyatli royhatdan otinggiz")
         } catch (error) {
-            
+            toast.error("Nimadir hato ketdi qaytadan kiriting!")
+            setEmail("")
+            setPassword("")
             console.error('Kirishda xatolik:', error.message);
         }
     };
@@ -29,8 +32,10 @@ function Contact() {
             const result = await signInWithPopup(auth, provider);
             const user = result.user;
             console.log(user);
+            toast.success("Siz google orqali royhatdan otinggiz")
             setData6(user); // Foydalanuvchi ma'lumotlarini context ga qo'shish
         } catch (error) {
+            toast.error("Nimadir hato ketdi qaytadan kiriting!")
             console.error('Google orqali ro\'yxatdan o\'tishda xatolik:', error.message);
         }
     };
@@ -85,6 +90,7 @@ function Contact() {
                             </div>
                         </div>
                     </form>
+            <ToastContainer />
                 </div>           
             </div>
         </div>

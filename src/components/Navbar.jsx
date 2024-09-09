@@ -39,6 +39,7 @@ function Navbar() {
 
     function user() {
         if (userJSON) {
+          console.log(userJSON.photoURL)
             return userJSON.photoURL;
         }
     }
