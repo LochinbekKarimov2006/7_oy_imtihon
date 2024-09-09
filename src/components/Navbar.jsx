@@ -20,7 +20,6 @@ function Navbar() {
     }, [data6]);
 
     useEffect(() => {
-        // localStorage'dan avvalgi theme o'qiladi
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
             setTheme(savedTheme);
